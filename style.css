@@ -1,0 +1,49 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #111;
+  color: #fff;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #000, #333);
+}
+.hero h1 {
+  font-size: 2.5em;
+  color: gold;
+}
+.hero p {
+  margin: 1em 0;
+}
+.cta {
+  padding: 10px 20px;
+  background: gold;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.animate {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+.delay1 { animation-delay: 0.3s; }
+.delay2 { animation-delay: 0.6s; }
+.delay3 { animation-delay: 0.9s; }
+
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(20px); }
+}
