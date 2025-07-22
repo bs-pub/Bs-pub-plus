@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BS-PUB+ | Contact</title>
+<style>
+  body { margin: 0; font-family: Arial, sans-serif; background-color: #ffffff; color: #000; }
+  header { background-color: #000; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  header img { height: 50px; }
+  nav a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; transition: color 0.3s ease; }
+  nav a:hover { color: #D4AF37; transform: scale(1.05); }
+  .contact-section { padding: 40px 20px; max-width: 600px; margin: auto; }
+  .contact-section h1 { text-align: center; color: #D4AF37; margin-bottom: 30px; }
+  form { display: flex; flex-direction: column; }
+  input, textarea { padding: 10px; margin: 10px 0; font-size: 16px; border: 1px solid #ccc; border-radius: 6px; }
+  button { background-color: #D4AF37; color: white; padding: 12px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: transform 0.2s ease; }
+  button:hover { transform: scale(1.05); background-color: #000; }
+  .whatsapp { text-align: center; margin-top: 20px; }
+  .whatsapp a { background-color: #25D366; color: white; padding: 12px 20px; border-radius: 30px; text-decoration: none; font-size: 16px; display: inline-block; transition: transform 0.2s ease; }
+  .whatsapp a:hover { transform: scale(1.05); background-color: #000; }
+  footer { background-color: #000; color: white; text-align: center; padding: 10px; font-size: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="Logo BS-PUB+">
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<section class="contact-section">
+  <h1>Contactez-nous</h1>
+  <form onsubmit="alert('Message envoyé ! Merci de nous avoir contacté.'); return false;">
+    <input type="text" name="nom" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+  <div class="whatsapp">
+    <p>Ou discutez directement avec nous :</p>
+    <a href="https://wa.me/2250565920834" target="_blank">📞 WhatsApp</a>
+  </div>
+</section>
+<footer>© 2025 BS-PUB+ - Tous droits réservés</footer>
+</body></html>
